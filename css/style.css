@@ -1,0 +1,60 @@
+/*-------------- Global --------------*/
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-pink: #fbc2cf;
+  --color-dark-pink: #f03661;
+  --color-grey: #666;
+  --color-light-grey: #999;
+  --color-blue: #3440fb;
+  --color--light-blue: #4653fb;
+  --color-black: #121212;
+
+  /* Font size */
+  --font-huge: 62px;
+  --font-large: 48px;
+  --font-medium: 32px;
+  --font-normal: 24px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 800;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-normal);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+* {
+  box-sizing: border-box;
+}
