@@ -30,7 +30,7 @@
 /*-------------- Typography --------------*/
 h1 {
   font-size: var(--font-large);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 16px 0px;
 }
@@ -61,7 +61,7 @@ p {
   margin: 0;
 }
 body {
-  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -70,6 +70,12 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /*-------------- Navbar --------------*/
 #navbar {
@@ -83,6 +89,7 @@ ul {
 .navbar__menu {
   display: flex;
   font-weight: var(--weight-medium);
+  letter-spacing: 1px;
 }
 .navbar__logo {
   display: flex;
@@ -108,4 +115,57 @@ ul {
 .navbar__menu__item:hover {
   background: var(--color--light-blue);
   color: var(--color-white);
+}
+/*-------------- Home --------------*/
+#home {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home__title span {
+  color: var(--color-blue);
+}
+.home__description {
+  font-weight: var(--weight-medium);
+}
+.home__contact-btn {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-medium);
+  background: var(--color-blue);
+  border-radius: 6px;
+  color: #fff;
+  padding: 16px 24px;
+  letter-spacing: 4px;
+  margin: 16px 0;
+}
+.home__circleImgBox {
+  background-color: var(--color-blue);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding-top: 32px;
+  position: relative;
+}
+.home__circleImgBox img.home__avatar {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.home__circleImgBox img.home__avatar-line {
+  position: absolute;
+  left: 145px;
+  top: 50px;
+}
+.home__circleImgBox .home__avatar-text {
+  color: var(--color-white);
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  font-size: var(--font-small);
+  line-height: 32px;
+  letter-spacing: 4px;
 }
