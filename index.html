@@ -36,12 +36,14 @@
       </ul>
     </div>
   </nav>
+
+  <div class="container">
   <!-- HOME -->
-  <section id="home">
+  <section id="home" class="section">
     <div class="home__leftBox">
       <h1 class="home__title">Hello!👋<br />I am <span>Web Designer</span> &<br /><span>Web Publisher</span></h1>
       <p class="home__description">안녕하세요.<br />웹디자이너/웹퍼블리셔 성지영입니다.</p>
-      <button class="home__contact-btn">CONTACT ME</button>
+      <button class="home__contact btn">CONTACT ME</button>
     </div>
     <div class="home__circleImgBox">
       <p class="home__avatar-text">WELCOME<br>TO MY<br>WEBSITE</p>
@@ -50,30 +52,68 @@
     </div>
   </section>
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <h1>About Me</h1>
-    <div class="about__img">
-      <img src="images/profile2.png" alt="about me profile photo">
+    <div class="about__flex-box">
+      <div class="about__img">
+        <img src="images/profile2.png" alt="about me profile photo">
+      </div>
+      <div class="about__description">
+        <h3>INTRODUCTION</h3>
+        <p>
+          주관적인 디자인의 세계와 예측 가능성과 확실성을 갖고 있는 코딩, 이 2가지를 함께 배우면서 
+          2가지 모두 저에게 각각의 매력으로 흥미롭게 다가왔습니다.
+          매번 창작의 고통을 안겨주는 디자인의 세계와 예측이 가능한 듯 보이다가도 예측불허한 코딩으로 인해
+          커피잔의 수는 늘어가지만 늘어나는 커피잔의 수만큼 보람도, 재미도 커져감을 느낍니다!
+        </p>
+        <h3>좌우명</h3>
+        <p>[근고지영 - 뿌리가 튼튼해야 가지가 무성하다]<br>모든 일을 할 때 먼저 기본에 충실하자</p>
+        <button class="about__download-cv btn">DOWNLOAD CV</button>
+      </div>
     </div>
-    <div class="about__description">
-      <h4>INTRODUCTION</h4>
-      <p>
-        주관적인 디자인의 세계와 예측 가능성과 확실성을 갖고 있는 코딩, 이 2가지를 함께 배우면서 
-        2가지 모두 저에게 각각의 매력으로 흥미롭게 다가왔습니다.
-        매번 창작의 고통을 안겨주는 디자인의 세계와 예측이 가능한 듯 보이다가도 예측불허한 코딩으로 인해
-        커피잔의 수는 늘어가지만 늘어나는 커피잔의 수만큼 보람도, 재미도 커져감을 느낍니다!
-      </p>
-      <h4>좌우명</h4>
-      <p>[근고지영] "뿌리가 튼튼해야 가지가 무성하다" 모든 일을 할 때 먼저 기본에 충실하자</p>
-      <button class="about__download-cv-btn">DOWNLOAD CV</button>
-    </div>
-    <div class="about__experience">
-      <div class="about__quailification"></div>
-      <div class="about__education"></div>
+  </section>
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h1>Experience</h1>
+    <div class="experience">
+        <ul class="experience__tab-btn">
+          <li class="active">
+            <a href="#tab1" class="tab">🏅Quailification</a>
+          </li>
+          <li>
+            <a href="#tab2" class="tab">📚Education</a>
+          </li>
+        </ul>
+        <div class="experience__content">
+          <div id="tab1" class="content_box">
+            <div class="circle content left">
+              <h3>컴퓨터그래픽스 운용기능사</h3>
+              <p>2015.06</p>
+            </div>
+            <div class="circle content right">
+              <h3>웹디자인기능사</h3>
+              <p>2015.08</p>
+            </div>
+            <div class="circle content left">
+              <h3>멀티미디어 콘텐츠기사</h3>
+              <p>2015.09</p>
+            </div>
+          </div>
+          <div id="tab2" class="content_box">
+            <div class="circle content left">
+              <h3>방송통신대학교 영문학과 졸업</h3>
+              <p>2021.08 예정</p>
+            </div>
+            <div class="circle content right">
+              <h3>이젠컴퓨터 스마트 웹콘텐츠 UI/UX 디자인&퍼블리셔 수료</h3>
+              <p>2021.02 ~ 2021.07</p>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h1>Skills</h1>
     <div class="skills__majors">
       <div class="major">
@@ -183,7 +223,7 @@
     </div>
   </section>
   <!-- Work -->
-  <section id="work">
+  <section id="work" class="section">
     <h1>Work</h1>
     <h3>My Projects</h3>
     <div class="work__categories">
@@ -281,7 +321,7 @@
     </div>
   </section>
   <!-- Testmonials -->
-  <section id="testimonials">
+  <section id="testimonials" class="section">
     <h1>Testimonials</h1>
     <h3>See what they say about me</h3>
     <div class="testimonials">
@@ -300,9 +340,9 @@
     </div>
   </section>
   <!-- Contact -->
-  <section id="contact">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">one69jy@gmail.com</h2>
+  <section id="contact" class="section">
+    <h2 class="contact__title">Let's talk</h2>
+    <h3 class="contact__email">one69jy@gmail.com</h3>
     <div class="contact__links">
       <a href="https://github.com/poohlikeshoney" target="blank">
         <i class="fab fa-github"></i>
@@ -315,6 +355,6 @@
       2021 Jiyoung - All rights reserved.
     </p>
   </section>
-
+</div>
 </body>
 </html>
