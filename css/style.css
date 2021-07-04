@@ -569,3 +569,39 @@ button {
   margin-bottom: 32px;
   border-bottom: 1px solid var(--color--light-blue);
 }
+/*-------------- footer --------------*/
+#footer {
+  background: var(--color-blue);
+}
+#footer.section {
+  padding-top: 50px;
+}
+#footer h2,
+#footer h3 {
+  color: var(--color-white);
+}
+.footer__links i {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  margin: 0 8px;
+  transition: all 300ms ease;
+}
+.footer__links :hover {
+  transform: scale(1.1);
+}
+.footer__copyrights {
+  color: var(--color-white);
+}
+.footer__title .navbar__logo {
+  justify-content: center;
+}
+.footer__title .navbar__logo a {
+  color: var(--color-white);
+}
+.footer__email {
+  margin: 32px 0;
+}
+.footer__copyrights {
+  margin-top: 16px;
+  font-weight: var(--weight-light);
+}
