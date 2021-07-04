@@ -484,3 +484,37 @@ button {
   height: 2px;
   background-color: var(--color--light-blue);
 }
+/*-------------- Testimonials --------------*/
+#testimonials {
+  background: #eee;
+}
+.testimonials {
+  margin: 40px;
+}
+
+.testimonials {
+  display: flex;
+  margin: 32px 16px;
+}
+.testimonials__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonials__avatar:nth-child(odd) {
+  margin-right: 32px;
+}
+.testimonials__avatar:nth-child(even) {
+  margin-left: 32px;
+}
+.testimonials__speech-bubble {
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: 8px;
+}
+.speech-bubble__name {
+  color: var(--color-light-grey);
+}
+.speech-bubble__name a {
+  color: var(--color--light-blue);
+}
