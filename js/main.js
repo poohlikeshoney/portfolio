@@ -15,12 +15,21 @@ document.addEventListener('scroll', () => {
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
-  //id가 클릭이 될때만 출력
   const link = target.dataset.link;
+  //id가 클릭이 될때만 출력
   if(link == null){
     return;
   }
-  // console.log(event.target.dataset.link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({behavior:"smooth"});
+  scrollIntoViews(link);
 });
+
+// home의 contact버튼 클릭했을 때 스크롤링
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+  scrollIntoViews('#contact')
+})
+
+function scrollIntoViews(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:"smooth"});
+}
