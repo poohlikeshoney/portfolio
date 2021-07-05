@@ -53,11 +53,6 @@ scrollUpBtn.addEventListener('click', () => {
   scrollIntoViews('#home')
 });
 
-function scrollIntoViews(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior:"smooth"});
-}
-
 // ✅ Experience tab버튼
 const tabList = document.querySelectorAll('.experience .experience__tab-btn li');
 const contents = document.querySelectorAll('.experience .experience__content .content_box')
@@ -69,16 +64,43 @@ for(var i = 0; i < tabList.length; i++){
     for(var j = 0; j < tabList.length; j++){
       // 나머지 버튼 클래스 제거
       tabList[j].classList.remove('active');
-
       // 나머지 컨텐츠 display:none 처리
       contents[j].style.display = 'none';
     }
-
     // 버튼 관련 이벤트
     this.parentNode.classList.add('active');
-
     // 버튼 클릭시 컨텐츠 전환
     activeCont = this.getAttribute('href');
     document.querySelector(activeCont).style.display = 'block';
   });
+}
+
+// ✅ project filter
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if(filter == null){
+    return;
+  }
+  projectContainer.classList.add('animate-out');
+  // projcet요소들 배열 방식으로 받아오기
+  setTimeout(()=>{
+    projects.forEach((project) => {
+      console.log(project.dataset.type);
+      if(filter === '*' || filter === project.dataset.type){
+        project.classList.remove('invisible');
+      } else{
+        project.classList.add('invisible'); 
+      }
+    });
+    projectContainer.classList.remove('animate-out');
+  }, 300)
+});
+
+
+function scrollIntoViews(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:"smooth"});
 }
