@@ -623,6 +623,28 @@ button {
   margin-top: 16px;
   font-weight: var(--weight-light);
 }
+
+/*-------------- scroll up btn --------------*/
+.scrollup-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  font-size: 32px;
+  padding: 16px 8px;
+  border-radius: 32px;
+  background: var(--color--light-blue);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  pointer-events: none;
+}
+.scrollup-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.scrollup-btn i {
+  color: var(--color-white);
+}
+/*-------------- 반응형 --------------*/
 @media screen and (max-width: 1024px) {
   #home {
     flex-direction: column-reverse;
