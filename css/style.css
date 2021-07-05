@@ -166,7 +166,7 @@ button {
 }
 /*-------------- Home --------------*/
 #home {
-  padding: 100px 60px;
+  padding: 200px 60px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
