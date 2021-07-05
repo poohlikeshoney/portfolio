@@ -84,6 +84,13 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter == null){
     return;
   }
+
+  // 버튼 active
+  const active = document.querySelector('.category__btn.active');
+  active.classList.remove('active');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
   projectContainer.classList.add('animate-out');
   // projcet요소들 배열 방식으로 받아오기
   setTimeout(()=>{

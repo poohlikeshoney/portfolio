@@ -150,9 +150,6 @@ button {
   cursor: pointer;
   border-radius: 6px;
 }
-.navbar__menu__item.active {
-  border: 2px solid var(--color--light-blue);
-}
 .navbar__menu__item:hover {
   background: var(--color--light-blue);
   color: var(--color-white);
