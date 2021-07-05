@@ -20,8 +20,15 @@ navbarMenu.addEventListener('click', (event) => {
   if(link == null){
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoViews(link);
 });
+  // ✅ Toogle Button
+  const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+  navbarToggleBtn.addEventListener('click',() => {
+    const navbarMenu = document.querySelector('.navbar__menu');
+    navbarMenu.classList.toggle('open');
+  });
 
 // ✅ home의 contact버튼 클릭했을 때 스크롤링
 const homeContactBtn = document.querySelector('.home__contact');
@@ -33,7 +40,7 @@ homeContactBtn.addEventListener('click', () => {
 const home = document.querySelector('#home');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  home.style.opacity = 1 - window.scrollY / (homeHeight - 200); 
+  home.style.opacity = 1 - window.scrollY / (homeHeight - 150); 
   // 1 - 0 / 800 = 1 ==> opacity:1
   // 1 - 400 / 800 = 0.5 ==> opacity:0.5
   // 1 - 800 / 800 = 0 ==> opacity:0
