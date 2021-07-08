@@ -192,6 +192,18 @@ button {
 .home__title span {
   color: var(--color-blue);
 }
+.home__title .hello {
+  position: relative;
+  animation: shakehand 600ms linear infinite alternate;
+}
+@keyframes shakehand {
+  from {
+    top: -6px;
+  }
+  to {
+    top: 8px;
+  }
+}
 .home__description {
   font-weight: var(--weight-medium);
 }
@@ -277,6 +289,10 @@ button {
 }
 .experience__tab-btn li {
   width: 50%;
+  transition: all 300ms ease-in-out;
+}
+.experience__tab-btn li:hover {
+  transform: translateY(-8px);
 }
 .experience__tab-btn li:first-child {
   text-align: right;
