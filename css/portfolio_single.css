@@ -1,0 +1,123 @@
+/*-------------- Global --------------*/
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-pink: #fbc2cf;
+  --color-dark-pink: #f03661;
+  --color-grey: #666;
+  --color-light-grey: #999;
+  --color-blue: #3440fb;
+  --color--light-blue: #4653fb;
+  --color-black: #121212;
+
+  /* Font size */
+  --font-huge: 62px;
+  --font-large: 48px;
+  --font-medium: 32px;
+  --font-normal: 24px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 800;
+  --weight-semi-bold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+}
+
+/*-------------- Typography --------------*/
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-normal);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.work__container {
+  max-width: 868px;
+  margin: 0 auto;
+  background: transparent;
+}
+.work__container img {
+  max-width: 100%;
+}
+.overviewBtn {
+  display: block;
+  margin-left: auto;
+}
+.work__overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+.work__overview-content p {
+  line-height: 32px;
+}
+.work__overview p {
+  font-weight: var(--weight-semi-bold);
+}
+.work__overview p span {
+  font-weight: var(--weight-regular);
+}
+
+/*-------------- scroll up btn --------------*/
+.portfolio-scrollup-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  font-size: 32px;
+  padding: 16px 8px;
+  border-radius: 32px;
+  background: var(--color--light-blue);
+  opacity: 0;
+  transition: all 300ms ease;
+  pointer-events: none;
+}
+.portfolio-scrollup-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.portfolio-scrollup-btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.portfolio-scrollup-btn i {
+  color: var(--color-white);
+}
+@media screen and (max-width: 960px) {
+  .work__overview {
+    flex-direction: column;
+  }
+  .overviewBtn {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
