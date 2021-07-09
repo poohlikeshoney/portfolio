@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이력서 pdf 다운로드</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2e64049d15.js" crossorigin="anonymous"></script>
+    <!-- googleFont -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/resume_cv.css">
+    <!-- HTML2PDF -->
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <script src="js/resume_cv.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-1" id="header">
+    <nav class="nav bd-container">
+      <a href="" class="nav__logo">Sung Jiyoung</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="fas fa-home nav__icon"></i>HOME
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class="far fa-user nav__icon"></i>PROFILE
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="fas fa-book nav__icon"></i>EDUCATION
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="fas fa-wrench nav__icon"></i>SKILLS
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="fas fa-briefcase nav__icon"></i>EXPERIENCE
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">
+              <i class="fas fa-medal nav__icon"></i>CERTIFICATES
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fas fa-hamburger"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main-1 bd-container">
+    <!-- pdf area -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!-- home -->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="images/profile2.png" alt="" class="home__img">
+              <h1 class="home__title">Sung Jiyoung</h1>
+              <h3 class="home__profession">Web Publisher</h3>
+
+              <div>
+                <button class="home__button-movil" title="Generate PDF" id="resume-button">Download</button>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="fas fa-map-marker-alt"></i>경기도 김포시 장기동 
+                </span>
+                <span class="home__information">
+                  <i class="far fa-envelope"></i>one69jy@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="fas fa-phone"></i>000-0000-0000
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theme change Btn -->
+          <i class="far fa-moon change-theme" title="Theme" id="theme-button"></i>
+          <!-- PDF Download Btn -->
+          <!-- <i class="fas fa-file-download generate-pdf" title="Generate PDF"></i> -->
+        </section>
+        <!-- social -->
+        <section class="social section">
+          <h2 class="section-title">SOCIAL</h2>
+          <div class="social__container bd-grid">
+            <a href="" target="_blank" class="social__link">
+              <i class="fab fa-instagram social__icon"></i>@jiyoung
+            </a>
+            <a href="" target="_blank" class="social__link">
+              <i class="fab fa-github social__icon"></i>@jiyoung
+            </a>
+          </div>
+        </section>
+        <!-- profile -->
+        <section class="profile section" id="profile">
+           <h2 class="section-title">PROFILE</h2>
+           <p class="profile__description">
+            Hello!👋 I'm Web Designer & Web Publisher. 안녕하세요! 디자인과 코딩을 좋아하는 웹디자이너/웹퍼블리셔 성지영입니다.
+           </p>
+        </section>
+        <!-- education -->
+        <section class="education section" id="education">
+          <h2 class="section-title">Education</h2>
+          <div class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+              <div class="education__data bd-grid">
+                <h3 class="education__title">master of design</h3>
+                <span class="education__studies">University</span>
+                <span class="education__years">2021.07</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+              <div class="education__data bd-grid">
+                <h3 class="education__title">master in UI/UX</h3>
+                <span class="education__studies">University</span>
+                <span class="education__years">2021.07</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <!-- <span class="education__line"></span> -->
+              </div>
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Web Publishing</h3>
+                <span class="education__studies">University</span>
+                <span class="education__years">2021.07</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- skill -->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span>HTML
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>CSS
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>JavaScript
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>jQuery
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span>Photoshop
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>Illustrator
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span>Aodbe XD
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="resume__right">
+        <!-- experience -->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">experience</h2>
+          <div class="experience__container bd-grid">
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Master Of Design</h3>
+                <span class="experience__company">2021</span>
+                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, placeat veniam. Eum numquam, totam ea ipsum sequi minus quam, provident id doloribus incidunt nulla!</p>
+              </div>
+            </div>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Master Of Publishing</h3>
+                  <span class="experience__company">2021</span>
+                  <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto distinctio vero cupiditate dicta, necessitatibus facere veniam consequuntur sint laboriosam molestiae, praesentium dolorum voluptates</p>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- certificates -->
+        <section class="certificate section" id="certificates">
+          <h2 class="section-title">certificate</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">웹디자인기능사 (2015.09)</h3>
+              <p class="certificate__description">웹페이지 규격에 맞게 웹페이지를 작성하고, HTML5 코딩과 스타일시트(CSS) 및 내비게이션을 제작하고 동작시키며, 효율적인 디렉토리 관리, 최적화된 파일포맷, Web Animation 제작을 할 수 있는지 평가.</p>
+            </div>
+            <div class="certificate__content">
+              <h3 class="certificate__title">컴퓨터그래픽스운용기능사 (2015.09)</h3>
+              <p class="certificate__description">사람이 표현할 수 없는 형상이나 그림을 컴퓨터라는 매체를 통해 다양한 기능과 기술 적 인 요소를 가미하여 시각적으로 형상화시켜 채색은 물론 조형을 제작할 수 있는 숙련 기능인력이 필요해짐에 따라 자격제도 제정.</p>
+            </div>
+            <div class="certificate__content">
+              <h3 class="certificate__title">멀티미디어콘텐츠제작전문가 (2015.09)</h3>
+              <p class="certificate__description">시스템 지원, 운용 및 사용할 S/W를 활용 기본적인 프로그래밍과 디자인 작업을 수행 할 수 있는 능력의 유무 평가.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- language -->
+        <section class="languages section">
+          <h2 class="section-title">languages</h2>
+          <div class="languages__container">
+            <ul class="languages__content bd-grid">
+              <li class="languages__name">
+                <span class="languages__circle"></span>English
+              </li>
+              <li class="languages__name">
+                <span class="languages__circle"></span>Chinese
+              </li>
+            </ul>
+          </div>
+        </section>
+
+         <!-- Interests -->
+         <section class="interests section">
+           <h2 class="section-title">Interests</h2>
+           <div class="interests__container bd-grid">
+             <div class="interests__content">
+              <i class="fas fa-music interests__icon"></i>
+              <span class="interests__name">Music</span>
+             </div>
+             <div class="interests__content">
+              <i class="fas fa-plane interests__icon"></i>
+              <span class="interests__name">Travel</span>
+             </div>
+             <div class="interests__content">
+              <i class="fas fa-dumbbell interests__icon"></i>
+              <span class="interests__name">Fitness</span>
+             </div>
+           </div>
+         </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- scroll top -->
+  <a href="" class="scrolltop" id="scroll-top">
+    <i class="fas fa-arrow-up scrolltop__icon"></i>
+  </a>
+</body>
+</html>

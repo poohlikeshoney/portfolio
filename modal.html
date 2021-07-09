@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .modal{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-overlay{
+      background:rgba(0,0,0,0.3);
+      width:100%;
+      height:100%;
+      position:absolute;
+    }
+    .modal-content{
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.2);
+      position:relative;
+      padding:50px 100px;
+      top:0;
+      width:20%;
+      text-align: center;
+      background:#fff;
+    }
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="openBtn" id="btn01">view more1</button>
+  <div class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h1>Hello1</h1>
+      <button>close</button>
+    </div>
+  </div>
+  <button class="openBtn" id="btn02">view more2</button>
+  <div class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h1>Hello2</h1>
+      <button>close</button>
+    </div>
+  </div>
+  <button class="openBtn" id="btn03">view more3</button>
+  <div class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h1>Hello3</h1>
+      <button>close</button>
+    </div>
+  </div>
+  <script>
+const openBtn = document.querySelector('.openBtn');
+const modal = document.querySelector('.modal');
+const overlay = modal.querySelector('.modal-overlay');
+const closeBtn = modal.querySelector('button');
+const openModal = () => {
+  modal.classList.remove('hidden');
+}
+const closeModal = () => {
+  modal.classList.add('hidden');
+}
+overlay.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal);
+openBtn.addEventListener('click', openModal);
+  </script>
+</body>
+</html>
