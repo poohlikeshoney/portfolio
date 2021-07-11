@@ -78,16 +78,24 @@ html {
   margin-top: 4rem;
   padding: 0 2rem;
 }
-.work__overview-content p {
+.work__overview-content li {
+  font-weight: var(--weight-semi-bold);
   line-height: 32px;
 }
-.work__overview p {
-  font-weight: var(--weight-semi-bold);
-}
-.work__overview p span {
+.work__overview li span {
   font-weight: var(--weight-regular);
 }
-
+.work__overview-content li {
+  color: var(--color--light-blue);
+}
+.work__overview-content li span {
+  display: inline-block;
+  color: var(--color-black);
+  margin-left: 12px;
+}
+.work__overview-content li .pageNum {
+  margin-left: 88px;
+}
 /*-------------- scroll up btn --------------*/
 .portfolio-scrollup-btn {
   position: fixed;
@@ -119,5 +127,13 @@ html {
   .overviewBtn {
     margin: 0 auto;
     margin-top: 2rem;
+  }
+  @media screen and (max-width: 478px) {
+    .work__overview-content li span {
+      margin-left: 0;
+    }
+    .work__overview-content li .pageNum {
+      margin-left: 0;
+    }
   }
 }
