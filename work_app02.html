@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2e64049d15.js" crossorigin="anonymous"></script>
+    <!-- googleFont (Poppins/Noto Sans KR)-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="Stylesheet" href="css/portfolio_single.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar__container">
+      <nav id="navbar">
+          <div class="navbar__logo">
+            <img src="images/logo.svg" alt="logo">
+            <a href="index.html">JIYOUNG</a>
+          </div>
+            <ul class="navbar__menu">
+              <a href="index.html"><li class="navbar__menu__item" data-link="#home">HOME</li></a>
+              <a href="index.html#work"><li class="navbar__menu__item active" data-link="#work">WORK</li></a>
+            </ul>
+          <!-- Toggle Button -->
+          <button class="navbar__toggle-btn"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div> 
+
+    <!-- Contents -->
+    <div class="container">
+      <section id="work" class="section">
+        <h1>Work</h1>
+        <h3>My Projects</h3>
+        <div class="work__overview">
+          <ul class="work__overview-content">
+            <li>Overview<span>콩떡콩떡 떡집 주문/배달 앱 🥇공모전 최우수상</span></li>
+            <li>Duration<span>2021.06.14 ~ 2021.06.25</span></li>
+            <li>Participation<span>디자인 및 퍼블리싱 100%</span></li>
+            <li>Technologies Used<span>HTML, CSS, javascript</span></li>
+          </ul>
+          <a href="" targe="_blank"><button class="btn overviewBtn">view online</button></a>
+        </div>
+      <div class="work__container">
+        <img src="images/work_app02@2x.png" alt="ricecake app">
+      </div>
+        <div class="video">
+          <video muted autoplay controls src="video/ricecake_app.mp4"></video>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer" class="section footer">
+      <h3 class="footer__title">
+        <div class="navbar__logo">
+          <img src="images/logo_footer.svg" alt="logo">
+          <a href="#">JIYOUNG</a>
+        </div>
+      </h3>
+      <h2 class="footer__email">one69jy@gmail.com</h2>
+      <div class="footer__links">
+        <a href="https://github.com/poohlikeshoney" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p class="footer__copyrights">
+        2021 Jiyoung - All rights reserved.
+      </p>
+    </section>
+
+    <!-- scroll up button -->
+    <a href="#">
+      <button class="portfolio-scrollup-btn">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </button>
+    </a>
+
+<script>
+  // scroll up butoon
+  const scrollupBtn = document.querySelector('.portfolio-scrollup-btn');
+  window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 300){
+      scrollupBtn.classList.add('active');
+    }else{
+      scrollupBtn.classList.remove('active');
+    }
+  })
+</script>
+</body>
+</html>
