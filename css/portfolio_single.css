@@ -137,3 +137,12 @@ html {
     }
   }
 }
+/*-------------- video --------------*/
+.video {
+  width: 380px;
+  margin: 0 auto;
+}
+.video video {
+  border-radius: 16px;
+  max-width: 100%;
+}
