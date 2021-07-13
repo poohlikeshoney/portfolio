@@ -14,9 +14,14 @@
   <!-- googleFont (Poppins/Noto Sans KR)-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- mail js -->
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <!-- custom -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
+  <script src="js/mail.js"></script>
+
 </head>
 <body>
   <!-- Navbar -->
@@ -334,7 +339,7 @@
   <!-- Testmonials -->
   <section id="testimonials" class="section">
     <h1>Testimonials</h1>
-    <p>앞으로 동료들과 함께 소통하며 좋은 평가를 받고 싶습니다🔥</p>
+    <p>앞으로 동료들과 함께 소통하며 좋은 평가를 받도록 노력하겠습니다🔥</p>
     <h3>See what they say about me</h3>
     <div class="container">
       <div class="testimonial">
@@ -391,25 +396,23 @@
           <div class="contact__inputs">
             <div class="contact__content">
               <label for="" class="contact__label">Name</label>
-              <input type="text" class="contact__input">
+              <input type="text" name="name" class="contact__input">
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input">
+              <input type="email" name="email" class="contact__input">
             </div>
           </div><!-- //contact__inputs -->
           <div class="contact__content">
-            <label for="" class="contact__label">Project</label>
-            <input type="text" class="contact__input">
+            <label for="" class="contact__label">Phone</label>
+            <input type="text" name="phone" class="contact__input">
           </div>
           <div class="contact__content">
             <label for="" class="contact__label">Message</label>
-            <textarea name="" id="" cols="7" rows="10" class="contact__input"></textarea>
+            <textarea name="message" id="" cols="7" rows="10" class="contact__input" placeholder="내용을 입력하신 후 'SEND MESSAGE' 버튼을 누르시면 저에게 이메일이 전송됩니다!"></textarea>
           </div>
           <div>
-            <a href="" class="btn">
-              SEND MESSAGE<i class="fas fa-paper-plane"></i>
-            </a>
+            <input type="button" name="submit" class="btn mail__Btn" value="SEND MESSAGE"/>
           </div>
         </form>
       </div><!-- //contact__right -->
