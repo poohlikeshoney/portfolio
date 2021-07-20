@@ -304,6 +304,9 @@ body.scale-cv {
   align-items: center;
   font-size: var(--small-font-size);
 }
+.home__information i {
+  margin-right: var(--mb-1);
+}
 .home__icon {
   font-size: 1.2rem;
   margin-left: 0.2rem;
@@ -336,6 +339,13 @@ body.scale-cv {
 }
 .social__link:hover {
   color: var(--title-color);
+}
+.social__link i {
+  margin-right: var(--mb-1);
+}
+.social__link span {
+  margin-right: var(--mb-1);
+  font-weight: var(--font-semi-bold);
 }
 .social__icon {
   font-size: 1.2rem;
@@ -414,7 +424,15 @@ body.scale-cv {
 /*------------------- certificate -------------------*/
 .certificate__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+}
+.certificate__circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 0.7rem;
 }
 /*------------------- Interests -------------------*/
 .interests__container {
