@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- mail js -->
   <script src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <!-- custom -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
@@ -72,7 +72,7 @@
           배움을 게을리 하지 않는<br>
           책임감을 갖고 꼼꼼하게 하는<br>
         </p>
-        <a href="resume_cv.html" target="_blank"><button class="about__download-cv btn" id="downloadBtn">DOWNLOAD CV</button></a>
+        <button type="button" onclick="window.open('resume_cv.html')" class="about__download-cv btn" id="downloadBtn">DOWNLOAD CV</button>
       </div>
     </div>
    <!-- Experience -->
@@ -233,7 +233,7 @@
   <section id="work" class="section">
     <h1>Work</h1>
     <h3>My Projects</h3>
-    <a target="_blank" href="images/my_portfolio.pdf"><button class=" work__pdfBtn btn">VIEW PDF</button></a>
+    <button type="button" onclick="window.open('images/my_portfolio.pdf')" class="work__pdfBtn btn">VIEW PDF</button>
     <div class="work__categories">
       <button class="category__btn active" data-filter="*">
         All<span class="category__count">10</span>
@@ -253,28 +253,28 @@
     </div>
     <!-- Web -->
     <div class="work__projects">
-      <a href="portfolio01.html" traget="blank" class="project" data-type="web">
+      <a href="portfolio01.html" target="_blank" class="project" data-type="web">
         <img src="images/project/fullpage.png" alt="fullpage website" class="project__img">
         <div class="project__description">
           <h3>Full Page Website</h3>
           <span>jQuery Full Page를 이용해 만든 반응형 웹사이트</span>
         </div>
       </a>
-      <a href="portfolio02.html" traget="blank" class="project" data-type="web">
+      <a href="portfolio02.html" target="_blank" class="project" data-type="web">
         <img src="images/project/wedding.png" alt="wedding website" class="project__img">
         <div class="project__description">
           <h3>Wedding Website</h3>
           <span>Bootstrap을 이용해 만든 반응형 웨딩 이벤트 사이트</span>
         </div>
       </a>
-      <a href="portfolio03.html" traget="blank" class="project" data-type="web">
+      <a href="portfolio03.html" target="_blank" class="project" data-type="web">
         <img src="images/project/blog.png" alt="my blog" class="project__img">
         <div class="project__description">
           <h3>Blog</h3>
           <span>개인 블로그 제작</span>
         </div>
       </a>
-      <a href="portfolio04.html" traget="blank" class="project" data-type="web">
+      <a href="portfolio04.html" target="_blank" class="project" data-type="web">
         <img src="images/project/shop.png" alt="shopping mall" class="project__img">
         <div class="project__description">
           <h3>Shopping Mall</h3>
@@ -282,21 +282,21 @@
         </div>
       </a>
     <!-- App -->
-      <a href="work_app01.html" traget="blank" class="project" data-type="app">
+      <a href="work_app01.html" target="_blank" class="project" data-type="app">
         <img src="images/project/weather.png" alt="weather app" class="project__img">
         <div class="project__description">
           <h3>Weather App</h3>
           <span>[하이브리드 APP] Open Weather API를 이용한 간단한 날씨앱</span>
         </div>
       </a>
-      <a href="work_app02.html" traget="blank" class="project" data-type="app">
+      <a href="work_app02.html" target="_blank" class="project" data-type="app">
         <img src="images/project/ricecake.png" alt="ricecake app" class="project__img">
         <div class="project__description">
           <h3>콩떡콩떡 App</h3>
           <span>[공모전 수상🥇] 떡을 주문하고 배달할 수 있는 떡집앱</span>
         </div>
       </a>
-      <a href="work_app03.html" traget="blank" class="project" data-type="app">
+      <a href="work_app03.html" target="_blank" class="project" data-type="app">
         <img src="images/project/hotel.png" alt="hotel app" class="project__img">
         <div class="project__description">
           <h3>Hotel App</h3>
@@ -304,28 +304,28 @@
         </div>
       </a>
       <!-- Design -->
-        <a href="design_01.html" traget="blank" class="project" data-type="design">
+        <a href="design_01.html" target="_blank" class="project" data-type="design">
           <img src="images/project/travel_app.jpg" alt="travel app gaja" class="project__img">
           <div class="project__description">
             <h3>App design</h3>
             <span>여행지를 추천해주고 여행 준비를 도와주는 여행앱</span>
           </div>
         </a>
-        <a href="#" traget="blank" class="project" data-type="design">
+        <a href="#" target="_blank" class="project" data-type="design">
           <img src="images/project/menlon.jpg" alt="melon re-design" class="project__img">
           <div class="project__description">
             <h3>뉴모피즘 디자인</h3>
             <span>멜론 플레이리스트와 재생 목록 화면을 뉴모피즘으로 새롭게 디자인 했습니다.</span>
           </div>
         </a>
-        <a href="#" traget="blank" class="project" data-type="design">
+        <a href="#" target="_blank" class="project" data-type="design">
           <img src="images/project/banner.png" alt="banner design" class="project__img">
           <div class="project__description">
             <h3>Banner Design</h3>
             <span>adobe XD를 이용해 운동화 배너 디자인을 제작하였습니다.</span>
           </div>
         </a>
-        <a href="#" traget="blank" class="project" data-type="design">
+        <a href="#" target="_blank" class="project" data-type="design">
           <img src="images/project/poster.png" alt="poster app" class="project__img">
           <div class="project__description">
             <h3>Poster Design</h3>
@@ -392,24 +392,24 @@
         </div>
       </div>
       <div class="contact__right">
-        <form action="" class="contact__form">
+        <form class="contact__form">
           <div class="contact__inputs">
             <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
+              <label for="name" class="contact__label">Name</label>
               <input type="text" name="name" class="contact__input">
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Email</label>
+              <label for="email" class="contact__label">Email</label>
               <input type="email" name="email" class="contact__input">
             </div>
           </div><!-- //contact__inputs -->
           <div class="contact__content">
-            <label for="" class="contact__label">Phone</label>
+            <label for="phone" class="contact__label">Phone</label>
             <input type="text" name="phone" class="contact__input">
           </div>
           <div class="contact__content">
-            <label for="" class="contact__label">Message</label>
-            <textarea name="message" id="" cols="7" rows="10" class="contact__input" placeholder="내용을 입력하신 후 'SEND MESSAGE' 버튼을 누르시면 저에게 이메일이 전송됩니다!"></textarea>
+            <label for="message" class="contact__label">Message</label>
+            <textarea name="message" id="message" cols="7" rows="10" class="contact__input" placeholder="내용을 입력하신 후 'SEND MESSAGE' 버튼을 누르시면 저에게 이메일이 전송됩니다!"></textarea>
           </div>
           <div>
             <input type="button" name="submit" class="btn mail__Btn" value="SEND MESSAGE"/>
@@ -421,15 +421,15 @@
 </div>
   <!-- Footer -->
   <section id="footer" class="section">
-    <h3 class="footer__title">
+    <div class="footer__title">
       <div class="navbar__logo">
         <img src="images/logo_footer.svg" alt="logo">
         <a href="#">JIYOUNG</a>
       </div>
-    </h3>
+    </div>
     <h2 class="footer__email">one69jy@gmail.com</h2>
     <div class="footer__links">
-      <a href="https://github.com/poohlikeshoney" target="blank">
+      <a href="https://github.com/poohlikeshoney" target="_blank">
         <i class="fab fa-github"></i>
       </a>
       <a href="#" target="_blank">
